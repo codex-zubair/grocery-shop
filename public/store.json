@@ -1,0 +1,52 @@
+[
+    {
+        "ID": "1",
+        "Name": "Potato",
+        "Price": "30"
+    },
+    {
+        "ID": "2",
+        "Name": "Tomato",
+        "Price": "80"
+    },
+    {
+        "ID": "3",
+        "Name": "Mango",
+        "Price": "60"
+    },
+    {
+        "ID": "4",
+        "Name": "Banana",
+        "Price": "30"
+    },
+    {
+        "ID": "5",
+        "Name": "Mink",
+        "Price": "45"
+    },
+    {
+        "ID": "6",
+        "Name": "Rice",
+        "Price": "60"
+    },
+    {
+        "ID": "7",
+        "Name": "Oil",
+        "Price": "110"
+    },
+    {
+        "ID": "8",
+        "Name": "Sugar",
+        "Price": "95"
+    },
+    {
+        "ID": "9",
+        "Name": "Corn Flower",
+        "Price": "60"
+    },
+    {
+        "ID": "10",
+        "Name": "Tea Pack",
+        "Price": "60"
+    }
+]
