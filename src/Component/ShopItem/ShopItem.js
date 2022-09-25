@@ -28,7 +28,7 @@ const ShopItem = () => {
 
 
     // Mapping Items because is's a Array list and sending to card to display the item...
-    return items.map(items=> <Card items = {items}></Card>)
+    return items.map(items=> <Card key={items.id} items = {items}></Card>)
 };
 
 export {ShopItem};

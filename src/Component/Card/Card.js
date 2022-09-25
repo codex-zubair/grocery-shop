@@ -12,13 +12,15 @@ const Card = (props) => {
     // !Start Shopping Item....
     const addShoppingItem = () => {
 
+
+
         // TODO Auto Reloading.
         window.location.reload();
 
-        // TODO NEED TO CALL ASIDE Loader Here
+        //  NEED TO CALL ASIDE Loader Here
 
 
-        // TODO Trying to call APP
+        //Trying to call APP
         // <App></App>
 
         // Now Taking CraftItem Object and setup properties and values.
@@ -141,7 +143,7 @@ const Card = (props) => {
         <div className='Shopping-Card'>
             <h1>{name}</h1>
             <h2>{price} Tk</h2>
-            <button onClick={() => addShoppingItem(name, price)} style={{ marginBottom: '1.5rem' }}>Add Item</button>
+            <button  onClick={() => addShoppingItem(name, price)} style={{ marginBottom: '1.5rem' }}>Add Item</button>
         </div>
     );
 };

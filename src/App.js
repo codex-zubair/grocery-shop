@@ -14,27 +14,30 @@ function App() {
 
   return (
     <div className="App">
- 
-         {/*Main Section Start  */}
-         <main>
-         
-         
-          {/* Shop Item Section Start */}
-          <section className='card-section'>
+
+      {/*Main Section Start  */}
+      <main>
+
+
+        {/* Shop Item Section Start */}
+        <section className='card-section'>
           <ShopItem></ShopItem>
-          </section>
-          {/* Shop Item Section End */}
+        </section>
+        {/* Shop Item Section End */}
 
-          {/* Aside Buying Items List */}
-         
-          
-          <Aside className='craft-aside-section'></Aside>
-           
-         </main>
-         {/*Main Section End  */}
+        {/* Aside Buying Items List */}
 
-       
-    
+        {/* TODO I want to Call this One whenever i press the button */}
+        
+        {/* {setInterval(()=> <Aside className='craft-aside-section'></Aside>,1000)} */}
+        
+        <Aside className='craft-aside-section'></Aside>
+
+      </main>
+      {/*Main Section End  */}
+
+
+
     </div>
   );
 }
