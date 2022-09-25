@@ -1,16 +1,34 @@
 import React from 'react';
-import { ShopDataLoad } from '../Utilites/ShopDataLoad';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Card } from '../Card/Card';
+
 
 
 const ShopItem = () => {
 
-    ShopDataLoad();
+    // Item Store State.
+    const [items , setItems] = useState([]);
+    
+    // Loading Data From Shop
+    const loadShop = async ()=> {
+        const response = await fetch('store.json');
+        const ShopItemList = await response.json();
+        setItems(ShopItemList);
+    }  
 
-    return (
-        <div>
-            <h1>Item Name</h1>
-        </div>
-    );
+    useEffect(()=> {
+        loadShop();
+
+    },[])
+
+
+
+    
+
+
+    // Mapping Items because is's a Array list and sending to card to display the item...
+    return items.map(items=> <Card items = {items}></Card>)
 };
 
 export {ShopItem};
