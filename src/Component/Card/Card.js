@@ -10,10 +10,24 @@ const Card = (props) => {
     const addShoppingItem =  ()=>
     {
         
-        // Checking in our local Stor
+        //! Checking in our local Storage already item exist or not...
+        const craftItemPrice = localStorage.getItem(`${name}`);
+        // !If value Exist
+        if(craftItemPrice)
+        {
+            alert("Exist!")
+            let newPrice = parseFloat(craftItemPrice) + parseFloat(price) ;
+            localStorage.setItem(`${name}`, newPrice)
+        }
+
+        else
+        {
+            alert("Not exist!")
+            localStorage.setItem(`${name}`,price)
+        }
 
 
-        // localStorage.setItem(`${name}`,price)
+        
     } 
     
     
