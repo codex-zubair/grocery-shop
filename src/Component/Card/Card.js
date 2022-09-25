@@ -1,5 +1,4 @@
 import React from 'react';
-import Aside from '../Aside/Aside';
 import './Card.css';
 
 const Card = (props) => {
@@ -13,7 +12,14 @@ const Card = (props) => {
     // !Start Shopping Item....
     const addShoppingItem = () => {
 
+        // TODO Auto Reloading.
         window.location.reload();
+
+        // TODO NEED TO CALL ASIDE Loader Here
+
+
+        // TODO Trying to call APP
+        // <App></App>
 
         // Now Taking CraftItem Object and setup properties and values.
         const addItem = () => {

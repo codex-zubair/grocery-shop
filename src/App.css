@@ -34,7 +34,10 @@ main {
   grid-template-columns: 80% 20%;
 }
 
-
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 @keyframes App-logo-spin {
   from {
@@ -53,5 +56,10 @@ main {
     display: flex;
     flex-direction: column-reverse;
   }
-  
+
+  .card-section {
+    display: block;
+
+  }
+
 }
