@@ -9,17 +9,17 @@ function App() {
     <div className="App">
  
          {/*Main Section Start  */}
-         <main >
-         {/* style={{display: "flex"}} */}
+         <main>
+         
          
           {/* Shop Item Section Start */}
-          <section>
+          <section className='card-section'>
           <ShopItem></ShopItem>
           </section>
           {/* Shop Item Section End */}
 
           {/* Aside Buying Items List */}
-         <Aside></Aside>
+         <Aside className='craft-aside-section'></Aside>
          </main>
          {/*Main Section End  */}
 
