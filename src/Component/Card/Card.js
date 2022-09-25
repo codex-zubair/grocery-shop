@@ -1,4 +1,5 @@
 import React from 'react';
+import Aside from '../Aside/Aside';
 import './Card.css';
 
 const Card = (props) => {
@@ -12,11 +13,10 @@ const Card = (props) => {
     // !Start Shopping Item....
     const addShoppingItem = () => {
 
-
-
+        window.location.reload();
 
         // Now Taking CraftItem Object and setup properties and values.
-        const addItem = (CraftItems) => {
+        const addItem = () => {
 
 
 
@@ -48,7 +48,7 @@ const Card = (props) => {
                 // "Name Is not Available!"
 
                 // "adding Item In List"
-                itemsList[name] = price;
+                itemsList[name] = parseFloat(price);
                 // !Now Storing Object Value Inside CraftItems.
                 //    "storing Object"
                 localStorage.setItem('craftItems', JSON.stringify(itemsList));

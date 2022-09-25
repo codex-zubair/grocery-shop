@@ -1,16 +1,27 @@
 import React from 'react';
 import AsideItems from '../AsideItems/AsideItems';
+import { clearAll, totalSumByReducer } from '../Utilities/calculation';
+
 
 const Aside = () => {
 
-
+   
     let itemList = JSON.parse(localStorage.getItem('craftItems'));
 
-    // making it object to get the names. 
+  
+    // !IF NO ITEM IN LOCAL STORAGE THAN IT WILL NOT WORK 
+    if(itemList)
+    {
+           // making it object to get the names. 
     const objectArrayList =  Object.entries(itemList);
 
-    
-    
+    // Getting all item price List.
+    const allItemPriceList = objectArrayList.map(price=>price[1])
+
+   
+
+    const total = totalSumByReducer(allItemPriceList);
+   
     
 
 
@@ -23,12 +34,14 @@ const Aside = () => {
             </ol>
             <hr />
 
-            <h3>Total: <span>000 Tk</span> </h3>
+            <h3>Total: <span>{total} Tk</span> </h3>
 
-            <button style={{ padding: '6px 20px' }}>Buy Items</button>
+            <button onClick={clearAll} style={{ padding: '6px 20px' }}>Clear ALL</button>
 
         </div>
     );
+    }
+     
 };
 
 export default Aside;

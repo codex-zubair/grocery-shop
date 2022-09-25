@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import Aside from './Component/Aside/Aside';
 import { ShopItem } from './Component/ShopItem/ShopItem';
@@ -5,6 +6,12 @@ import { ShopItem } from './Component/ShopItem/ShopItem';
 
 
 function App() {
+
+  // const [localStorageChange, setValue] = useState()
+  // setValue(localStorage.getItem('craftItems'));
+
+
+
   return (
     <div className="App">
  
@@ -19,7 +26,10 @@ function App() {
           {/* Shop Item Section End */}
 
           {/* Aside Buying Items List */}
-         <Aside className='craft-aside-section'></Aside>
+         
+          
+          <Aside className='craft-aside-section'></Aside>
+           
          </main>
          {/*Main Section End  */}
 
